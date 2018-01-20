@@ -1,0 +1,250 @@
+@import 'reset';
+@import 'grid';
+@import 'animate';
+
+/*
+===================
+VARIABLES
+===================
+*/
+
+$color-text: #ffffff;
+$color-link: #03a9f4;
+$highlight-color: #03a9f4;
+$bg-about: #3498db;
+$bg-work: #f1c40f;
+$bg-resume: #f1f1d4;
+$bg-contact: #27ae60;
+
+$bottom-nav-height: 15%;
+$main-container-width: 50%;
+$nav-container-width: 50%;
+$inner-disc-radius: 20%;
+
+// $title-font: "Overpass", sans-serif;
+
+/*
+===================
+PAGE SETTINGS
+===================
+*/
+body, html {
+  width: 100%;
+  height: 100%;
+  color: $color-text;
+}
+body {
+  background: url('../images/02.jpg') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection {
+  background: #000;
+  color: #fff;
+}
+.title {
+  font-weight: 200;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.site-title {
+  font-size: 2em;
+  span {
+    font-size: 0.4em;
+  }
+}
+
+.shape {
+  width: 120px;
+  height: 140px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: $highlight-color;
+  position: relative;
+  top: 20%;
+  left: 20px;
+}
+a {
+  color: $color-link;
+}
+h5 {
+  margin: 0;
+}
+/*
+======================
+MENU HEADER
+=======================
+*/
+
+.menu-header {
+  transition: all 0.4s ease;
+  position: relative;
+  cursor: pointer;
+  h4 {
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    top: 50%;
+    font-size: 1.2em;
+  }
+  i.fa {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: $nav-container-width;
+  transition-duration: 0.5s;
+
+  .nav-container {
+    height: 100%;
+  }
+}
+
+.black-glass {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.right .black-glass:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.left {
+  width: $main-container-width;
+  height: 100%;
+  position: relative;
+}
+
+.main-info {
+  position: relative;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+/*
+=================
+ARTICLE
+=================
+*/
+
+article {
+  height: 68%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  position: relative;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 1em;
+  color: #333;
+  font-size: 0.8em;
+
+  h1, h2, h3, h4, h5, p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+  }
+
+  li {
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+  }
+  h3 {
+    margin-top: 1em;
+  }
+  h2 {
+    font-weight: 700;
+    margin-top: 1em;
+    font-size: 2em;
+  }
+  p {
+    margin-bottom: 0.8em;
+  }
+  span {
+    font-size: 0.9em;
+    color: #6b6b6b;
+  }
+}
+
+article.about {
+  img {
+    width: 50%;
+    max-width: 300px;
+    float: right;
+  }
+}
+article.work {
+  h3, p {
+    margin-bottom: 0.2em;
+  }
+}
+.close {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: transparent;
+  border: 3px solid #000000;
+  position: absolute;
+  right: 1em;
+  cursor: pointer;
+}
+.close:hover {
+  background: #000000;
+}
+@media all and (max-width: 768px) {
+  body {
+    // font-size: 0.9em;
+  }
+  .right {
+    width: 100%;
+    height: 70%;
+    top: initial;
+  }
+  .left {
+    position: absolute;
+    top: 0;
+    height: 30%;
+    width: 100%;
+    bottom: initial;
+  }
+  .main-info {
+    font-size: 0.9em;
+    bottom: initial;
+    left: 0;
+    padding: 2em;
+    .text {
+      float: left;
+      z-index: 1;
+      left: 0;
+    }
+  }
+}
+@media all and (max-width: 530px) {
+  .main-info {
+    font-size: 0.8em;
+    span {
+      display: block;
+    }
+  }
+}
