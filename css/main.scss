@@ -212,6 +212,15 @@ article.work {
 .close:hover {
   background: #000000;
 }
+
+.contact {
+  .fa {
+    margin-right: 10px;
+  }
+}
+.contact-link {
+  color: #000;
+}
 @media all and (max-width: 768px) {
   body {
     // font-size: 0.9em;

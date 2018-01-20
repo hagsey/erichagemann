@@ -2595,6 +2595,12 @@ article.work h3, article.work p {
 .close:hover {
   background: #000000; }
 
+.contact .fa {
+  margin-right: 10px; }
+
+.contact-link {
+  color: #000; }
+
 @media all and (max-width: 768px) {
   .right {
     width: 100%;
