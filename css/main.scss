@@ -189,8 +189,9 @@ article {
 article.about {
   img {
     width: 50%;
-    max-width: 300px;
+    max-width: 230px;
     float: right;
+    border-radius: 100%;
   }
 }
 article.work {

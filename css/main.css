@@ -2575,8 +2575,9 @@ article {
 
 article.about img {
   width: 50%;
-  max-width: 300px;
-  float: right; }
+  max-width: 230px;
+  float: right;
+  border-radius: 100%; }
 
 article.work h3, article.work p {
   margin-bottom: 0.2em; }
