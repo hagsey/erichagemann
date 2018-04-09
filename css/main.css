@@ -73,7 +73,7 @@ h2 {
   font-size: 1.5em; }
 
 h3 {
-  font-size: 1.17em; }
+  font-size: 1.3em; }
 
 h4 {
   font-size: 1.12em; }
@@ -2481,7 +2481,7 @@ p::selection {
   left: 20px; }
 
 a {
-  color: #03a9f4; }
+  color: #40739e; }
 
 h5 {
   margin: 0; }
@@ -2558,20 +2558,33 @@ article {
   article h1, article h2, article h3, article h4, article h5, article p {
     margin-bottom: 1em;
     line-height: 1.5em; }
+  article ul, article ol {
+    margin-bottom: 2em; }
   article li {
-    padding-left: 1em;
+    display: list-item;
+    list-style-type: disc;
+    line-height: 1.2em;
+    margin-left: 2em;
     margin-bottom: 0.5em; }
   article h3 {
     margin-top: 1em; }
   article h2 {
-    font-weight: 700;
-    margin-top: 1em;
-    font-size: 2em; }
+    font-weight: 200;
+    font-size: 2.4em; }
+  article h2:not(:first-child) {
+    margin-top: 2em; }
   article p {
-    margin-bottom: 0.8em; }
+    margin-bottom: 1em; }
+  article p, article li {
+    color: #444; }
   article span {
     font-size: 0.9em;
     color: #6b6b6b; }
+
+article.resume h3 {
+  border-bottom: 1px solid #999; }
+article.resume h4 {
+  font-style: italic; }
 
 article.about img {
   width: 50%;
