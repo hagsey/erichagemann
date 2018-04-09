@@ -2445,7 +2445,7 @@ body, html {
   color: #ffffff; }
 
 body {
-  background: url("../images/banner_dark.jpg") no-repeat;
+  background: url("../images/mountain.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
   font-family: Helvetica, Arial, sans-serif; }
@@ -2460,14 +2460,21 @@ p::selection {
   color: #fff; }
 
 .title {
+  font-family: "Oswald", Helvetica, Arial;
   font-weight: 200;
   font-size: 1em;
   text-transform: uppercase; }
 
 .site-title {
+  color: #555;
+  text-transform: uppercase;
+  font-family: "Oswald", Helvetica, Arial;
   font-size: 2em; }
   .site-title span {
     font-size: 0.4em; }
+
+.site-subtitle {
+  font-size: 1em; }
 
 .shape {
   width: 120px;
@@ -2536,8 +2543,7 @@ MENU HEADER
   padding: 1em;
   width: 100%;
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10%;
   box-sizing: border-box; }
 
 /*
@@ -2588,8 +2594,8 @@ article.resume h4 {
 
 article.about img {
   width: 50%;
-  max-width: 230px;
   float: right;
+  max-width: 200px;
   border-radius: 100%; }
 
 article.work h3, article.work p {
